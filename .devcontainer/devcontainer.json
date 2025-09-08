@@ -1,0 +1,10 @@
+{
+    "name": "Android Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": { "version": "17" },
+        "ghcr.io/devcontainers-contrib/features/android-sdk-cli:2": {},
+        "ghcr.io/devcontainers/features/git-lfs:1": {}
+    },
+    "postCreateCommand": "yes | sdkmanager --licenses && sdkmanager --install \"build-tools;34.0.0\" \"platforms;android-34\" \"cmdline-tools;latest\""
+}
